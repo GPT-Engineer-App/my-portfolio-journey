@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Heading, Text, Image, Flex, Link, Icon, VStack, HStack, Divider } from "@chakra-ui/react";
+import { Box, Heading, Text, Image, Flex, Icon, VStack, HStack, Divider } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Index = () => {
@@ -11,9 +12,9 @@ const Index = () => {
           Your Name
         </Heading>
         <HStack spacing={4}>
-          <Link href="#about">About</Link>
-          <Link href="#projects">Projects</Link>
-          <Link href="#contact">Contact</Link>
+          <Link to="/about">About</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact</Link>
         </HStack>
       </Flex>
 
